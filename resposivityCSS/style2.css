@@ -1,0 +1,150 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: gray;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.bigger {
+    width: 94%;
+    height: 50%;
+    background-color: gray;
+    border-radius: 12px;
+}
+
+.div {
+    width: 100%;
+    height: 50%;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div div {
+    width: 45%;
+    height: 45%;
+    border-radius: 8px;
+    background: gray;
+}
+
+.div div {
+    background-color: gray;
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bigger {
+        width: 100%;
+        height: 150px;
+        display: none;
+    }
+
+    .div {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .div div {
+        width: 95%;
+        height: 200px;
+        background: gray;
+    }
+
+    .divblock {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;  
+        transition: all 300ms;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: all 300ms;
+    }
+
+    #section2 {
+        display: none;
+    }
+
+    .bigger {
+        width: 100%;
+        height: 150px;
+        display: none;
+    }
+
+    .div {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .div div {
+        width: 95%;
+        height: 200px;
+        background: gray;
+    }
+
+    .divblock {
+        display: none;
+    }
+    
+}
